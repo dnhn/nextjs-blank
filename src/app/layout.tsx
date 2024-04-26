@@ -2,11 +2,6 @@ import type { Metadata } from "next";
 
 import "@/css/globals.css";
 
-export const metadata: Metadata = {
-  title: "",
-  description: "",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -18,3 +13,11 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata: Metadata = {
+  title: "",
+  description: "",
+  openGraph: {
+    type: "website",
+  },
+};
